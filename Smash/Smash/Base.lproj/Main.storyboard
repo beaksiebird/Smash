@@ -16,16 +16,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcv-Uc-Kyq">
+                                <rect key="frame" x="0.0" y="0.0" width="700" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BfD-up-Xmf" customClass="BallCountView" customModule="Smash" customModuleProvider="target">
+                                        <rect key="frame" x="12" y="12" width="120" height="16"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="PxQ-Tv-hj2"/>
+                                            <constraint firstAttribute="height" constant="16" id="RZU-bV-zWf"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="ballsLeft">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <real key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hI2-tu-kRC">
+                                        <rect key="frame" x="530" y="10" width="160" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="PoG-hi-9fC"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="jed-I5-JZD"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="mbo-sa-8Sd"/>
+                                            <constraint firstAttribute="width" constant="160" id="t3U-aH-ePj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="jed-I5-JZD"/>
+                                                <exclude reference="mbo-sa-8Sd"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agM-GF-rId">
+                                        <rect key="frame" x="270" y="10" width="160" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="4Hz-ZR-s4c"/>
+                                            <constraint firstAttribute="height" constant="20" id="Lry-Kt-HXZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="agM-GF-rId" firstAttribute="top" secondItem="lcv-Uc-Kyq" secondAttribute="top" constant="10" id="4x4-eC-iPP"/>
+                                    <constraint firstItem="hI2-tu-kRC" firstAttribute="top" secondItem="lcv-Uc-Kyq" secondAttribute="top" constant="10" id="76P-rR-4EF"/>
+                                    <constraint firstAttribute="height" constant="40" id="B8e-rb-R2S"/>
+                                    <constraint firstItem="BfD-up-Xmf" firstAttribute="top" secondItem="lcv-Uc-Kyq" secondAttribute="top" constant="12" id="Eb4-zX-Lj7"/>
+                                    <constraint firstItem="BfD-up-Xmf" firstAttribute="leading" secondItem="lcv-Uc-Kyq" secondAttribute="leading" constant="12" id="PRV-zm-fwK"/>
+                                    <constraint firstAttribute="centerX" secondItem="agM-GF-rId" secondAttribute="centerX" id="PeE-fp-TP5"/>
+                                    <constraint firstAttribute="trailing" secondItem="hI2-tu-kRC" secondAttribute="trailing" constant="10" id="SAI-az-bc7"/>
+                                    <constraint firstItem="hI2-tu-kRC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="lcv-Uc-Kyq" secondAttribute="top" constant="10" id="YCV-oq-re5"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hI2-tu-kRC" secondAttribute="trailing" constant="18" id="f7f-M5-SyJ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="YCV-oq-re5"/>
+                                        <exclude reference="f7f-M5-SyJ"/>
+                                    </mask>
+                                </variation>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cD8-pa-8l5">
                                 <rect key="frame" x="0.0" y="40" width="700" height="360"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcv-Uc-Kyq">
-                                <rect key="frame" x="0.0" y="0.0" width="700" height="40"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="B8e-rb-R2S"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -42,8 +102,11 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="700" height="400"/>
                     <connections>
+                        <outlet property="currentScoreLabel" destination="hI2-tu-kRC" id="efW-hp-o9b"/>
                         <outlet property="gameView" destination="cD8-pa-8l5" id="uaQ-tE-bp0"/>
                         <outlet property="headerView" destination="lcv-Uc-Kyq" id="y1u-Bv-oLD"/>
+                        <outlet property="livesView" destination="BfD-up-Xmf" id="I6m-4P-cTC"/>
+                        <outlet property="topScoreLabel" destination="agM-GF-rId" id="Ql2-rO-qae"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

@@ -17,6 +17,7 @@
 		A9DBFA931B0BBEE500B88C2D /* BallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFA921B0BBEE500B88C2D /* BallView.swift */; };
 		A9DBFA951B0BBEF500B88C2D /* BrickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFA941B0BBEF500B88C2D /* BrickView.swift */; };
 		A9DBFA971B0BBF0500B88C2D /* PaddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFA961B0BBF0500B88C2D /* PaddleView.swift */; };
+		CD92A32C1B0CCF4600A27032 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD92A32B1B0CCF4600A27032 /* GameData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		A9DBFA921B0BBEE500B88C2D /* BallView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallView.swift; sourceTree = "<group>"; };
 		A9DBFA941B0BBEF500B88C2D /* BrickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrickView.swift; sourceTree = "<group>"; };
 		A9DBFA961B0BBF0500B88C2D /* PaddleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddleView.swift; sourceTree = "<group>"; };
+		CD92A32B1B0CCF4600A27032 /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +87,13 @@
 		A9DAD68C1B0B6CE80075E4FE /* Smash */ = {
 			isa = PBXGroup;
 			children = (
-				A9DAD6911B0B6CE80075E4FE /* ViewController.swift */,
 				A9DAD6931B0B6CE80075E4FE /* Main.storyboard */,
+				A9DAD6911B0B6CE80075E4FE /* ViewController.swift */,
 				A9DBFA901B0BBED500B88C2D /* BallCountView.swift */,
 				A9DBFA921B0BBEE500B88C2D /* BallView.swift */,
 				A9DBFA941B0BBEF500B88C2D /* BrickView.swift */,
 				A9DBFA961B0BBF0500B88C2D /* PaddleView.swift */,
+				CD92A32B1B0CCF4600A27032 /* GameData.swift */,
 				A9DAD68D1B0B6CE80075E4FE /* Supporting Files */,
 			);
 			path = Smash;
@@ -228,6 +231,7 @@
 				A9DBFA911B0BBED500B88C2D /* BallCountView.swift in Sources */,
 				A9DBFA951B0BBEF500B88C2D /* BrickView.swift in Sources */,
 				A9DAD6901B0B6CE80075E4FE /* AppDelegate.swift in Sources */,
+				CD92A32C1B0CCF4600A27032 /* GameData.swift in Sources */,
 				A9DBFA971B0BBF0500B88C2D /* PaddleView.swift in Sources */,
 				A9DBFA931B0BBEE500B88C2D /* BallView.swift in Sources */,
 			);

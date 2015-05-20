@@ -12,7 +12,46 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
     
     @IBOutlet weak var gameView: UIView!
     @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var livesView: BallCountView!
     
+    @IBOutlet weak var topScoreLabel: UILabel!
+    
+    @IBOutlet weak var currentScoreLabel: UILabel!
+    
+    var currentScore = 0 {
+        
+        didSet {
+            
+            currentScoreLabel.text = "Score: \(currentScore)"
+            
+            if currentScore > topScore {
+                
+                topScore = currentScore
+            }
+            
+        }
+    }
+    
+    
+    var topScore: Int {
+        
+        get {
+            
+            return NSUserDefaults.standardUserDefaults().integerForKey("topScore")
+            
+            
+        }
+        
+            set {
+                
+            NSUserDefaults.standardUserDefaults().setInteger(newValue, forKey: "topScore")
+            NSUserDefaults.standardUserDefaults().synchronize()
+                
+            topScoreLabel.text = "\(newValue)"
+            
+        }
+        
+    }
     
     var animator: UIDynamicAnimator!
     var gravityBehavior = UIGravityBehavior()
@@ -29,6 +68,8 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
         
         
         ///////////
+        
+        topScoreLabel.text = "\(topScore)"
         
         animator = UIDynamicAnimator(referenceView: gameView)
         
@@ -89,6 +130,8 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
                 scoreLabel.textAlignment = .Center
                 gameView.addSubview(scoreLabel)
                 
+                currentScore += 100
+                
                 UIView.animateWithDuration(0.4, animations: { () -> Void in
                     
                     scoreLabel.alpha = 0
@@ -118,6 +161,15 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
                 collisionBehavior.removeItem(balls[0])
                 balls[0].removeFromSuperview()
                 balls.removeAtIndex(0)
+                
+                if livesView.ballsLeft > 0 {
+                    
+                    livesView.ballsLeft--
+                
+                }
+                
+                
+                
                 
                 createBall()
                 
