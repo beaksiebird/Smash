@@ -21,6 +21,7 @@
 		CD92A32F1B0CE03900A27032 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD92A32E1B0CE03900A27032 /* StartViewController.swift */; };
 		CD92A3311B0CE07200A27032 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD92A3301B0CE07200A27032 /* DoneViewController.swift */; };
 		CD92A3341B0CE5C100A27032 /* BROKEN74.TTF in Resources */ = {isa = PBXBuildFile; fileRef = CD92A32D1B0CDF5400A27032 /* BROKEN74.TTF */; };
+		CD92A3361B0D210700A27032 /* FinishedLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD92A3351B0D210700A27032 /* FinishedLevel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		CD92A32D1B0CDF5400A27032 /* BROKEN74.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = BROKEN74.TTF; path = ../../../../Downloads/broken74/BROKEN74.TTF; sourceTree = "<group>"; };
 		CD92A32E1B0CE03900A27032 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		CD92A3301B0CE07200A27032 /* DoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
+		CD92A3351B0D210700A27032 /* FinishedLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishedLevel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				CD92A32B1B0CCF4600A27032 /* GameData.swift */,
+				CD92A3351B0D210700A27032 /* FinishedLevel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				A9DBFA951B0BBEF500B88C2D /* BrickView.swift in Sources */,
 				A9DAD6901B0B6CE80075E4FE /* AppDelegate.swift in Sources */,
 				CD92A32C1B0CCF4600A27032 /* GameData.swift in Sources */,
+				CD92A3361B0D210700A27032 /* FinishedLevel.swift in Sources */,
 				A9DBFA971B0BBF0500B88C2D /* PaddleView.swift in Sources */,
 				CD92A3311B0CE07200A27032 /* DoneViewController.swift in Sources */,
 				A9DBFA931B0BBEE500B88C2D /* BallView.swift in Sources */,
