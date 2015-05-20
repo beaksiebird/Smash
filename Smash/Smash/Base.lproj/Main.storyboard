@@ -2,9 +2,17 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vKU-wY-hbc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="BROKEN74.TTF">
+            <string>Broken74</string>
+            <string>Broken74</string>
+            <string>Broken74</string>
+            <string>Broken74</string>
+            <string>Broken74</string>
+            <string>Broken74</string>
+            <string>Broken74</string>
             <string>Broken74</string>
             <string>Broken74</string>
         </mutableArray>
@@ -22,8 +30,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8w-SA-hPU">
-                                <rect key="frame" x="239" y="173" width="171" height="54"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMASH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQu-vx-N04">
+                                <rect key="frame" x="156" y="9" width="388" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="163" id="Zm1-Fp-XoF"/>
+                                    <constraint firstAttribute="width" constant="388" id="p9M-84-oKK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Broken74" family="Broken74" pointSize="88"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8w-SA-hPU">
+                                <rect key="frame" x="265" y="187" width="171" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="DsB-lU-SfF"/>
+                                    <constraint firstAttribute="height" constant="54" id="aL6-sg-fEP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Broken74" family="Broken74" pointSize="26"/>
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -33,14 +55,14 @@
                                     <action selector="startNewGame:" destination="yHB-Mi-Z2M" eventType="touchUpInside" id="Ktn-un-i16"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SMASH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQu-vx-N04">
-                                <rect key="frame" x="144" y="0.0" width="388" height="163"/>
-                                <fontDescription key="fontDescription" name="Broken74" family="Broken74" pointSize="88"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k8w-SA-hPU" firstAttribute="top" secondItem="TQu-vx-N04" secondAttribute="bottom" constant="15" id="2FO-ZL-Gud"/>
+                            <constraint firstItem="TQu-vx-N04" firstAttribute="top" secondItem="wEO-xj-ZIm" secondAttribute="topMargin" constant="9" id="E4N-Ws-Ule"/>
+                            <constraint firstAttribute="centerX" secondItem="TQu-vx-N04" secondAttribute="centerX" id="bPv-Qh-fs2"/>
+                            <constraint firstAttribute="centerX" secondItem="k8w-SA-hPU" secondAttribute="centerX" id="mXa-ol-YwN"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iKH-N2-ent"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -171,7 +193,43 @@
                     <view key="view" contentMode="scaleToFill" id="OtJ-ht-cod">
                         <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Id4-6n-zO0">
+                                <rect key="frame" x="584" y="329" width="56" height="51"/>
+                                <fontDescription key="fontDescription" name="Broken74" family="Broken74" pointSize="18"/>
+                                <state key="normal" title="QUIT">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LEVEL COMPLETE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydl-de-Qyf">
+                                <rect key="frame" x="94" y="36" width="238" height="51"/>
+                                <fontDescription key="fontDescription" name="Broken74" family="Broken74" pointSize="21"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BALLS LEFT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEP-2K-EYd">
+                                <rect key="frame" x="94" y="218" width="229" height="52"/>
+                                <fontDescription key="fontDescription" name="Broken74" family="Broken74" pointSize="21"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="POINTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SE7-SW-SwZ">
+                                <rect key="frame" x="94" y="125" width="222" height="49"/>
+                                <fontDescription key="fontDescription" name="Broken74" family="Broken74" pointSize="21"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKW-Y3-Fck">
+                                <rect key="frame" x="551" y="279" width="123" height="42"/>
+                                <fontDescription key="fontDescription" name="Broken74" family="Broken74" pointSize="18"/>
+                                <state key="normal" title="NEXT LEVEL">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="700" height="400"/>
@@ -179,6 +237,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QQC-8a-tmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1865" y="379"/>
+        </scene>
+        <!--Done View Controller-->
+        <scene sceneID="TEI-L1-MUf">
+            <objects>
+                <viewController storyboardIdentifier="DoneDC" id="tlc-CO-gdE" customClass="DoneViewController" customModule="Smash" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6pP-b3-nYm"/>
+                        <viewControllerLayoutGuide type="bottom" id="MMi-ly-hHw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v2W-vA-esB">
+                        <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU FAIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vx-Aq-UZV">
+                                <rect key="frame" x="162" y="102" width="377" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="KrN-BL-YXb"/>
+                                    <constraint firstAttribute="width" constant="377" id="nP0-i0-HOG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Broken74" family="Broken74" pointSize="63"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FI6-j8-5rD">
+                                <rect key="frame" x="288" y="289" width="124" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="GJe-v1-W1D"/>
+                                    <constraint firstAttribute="width" constant="124" id="jC1-j7-qwA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Broken74" family="Broken74" pointSize="33"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yHB-Mi-Z2M" kind="show" id="RJr-iA-E4Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7vx-Aq-UZV" firstAttribute="top" secondItem="6pP-b3-nYm" secondAttribute="bottom" constant="82" id="Gh9-rk-CQs"/>
+                            <constraint firstAttribute="centerX" secondItem="7vx-Aq-UZV" secondAttribute="centerX" id="Xzm-e0-vYe"/>
+                            <constraint firstAttribute="centerX" secondItem="FI6-j8-5rD" secondAttribute="centerX" id="bTg-Kd-6K5"/>
+                            <constraint firstItem="FI6-j8-5rD" firstAttribute="top" secondItem="7vx-Aq-UZV" secondAttribute="bottom" constant="53" id="yhu-G2-bXZ"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="700" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mBl-c1-fFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="905"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bc1-AH-mEl">
@@ -200,4 +311,7 @@
             <point key="canvasLocation" x="-445" y="379"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="RJr-iA-E4Z"/>
+    </inferredMetricsTieBreakers>
 </document>

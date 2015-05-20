@@ -144,9 +144,9 @@
 			isa = PBXGroup;
 			children = (
 				A9DAD6911B0B6CE80075E4FE /* LevelViewController.swift */,
-				A9DBFA901B0BBED500B88C2D /* BallCountView.swift */,
 				A9DBFA921B0BBEE500B88C2D /* BallView.swift */,
 				A9DBFA941B0BBEF500B88C2D /* BrickView.swift */,
+				A9DBFA901B0BBED500B88C2D /* BallCountView.swift */,
 				A9DBFA961B0BBF0500B88C2D /* PaddleView.swift */,
 			);
 			name = Level;

@@ -111,6 +111,7 @@ class LevelViewController: UIViewController, UICollisionBehaviorDelegate {
         createBricks()
         createPaddle()
         
+        
     }
     
     func collisionBehavior(behavior: UICollisionBehavior, beganContactForItem item1: UIDynamicItem, withItem item2: UIDynamicItem, atPoint p: CGPoint) {
@@ -153,18 +154,18 @@ class LevelViewController: UIViewController, UICollisionBehaviorDelegate {
                     })
                     
                     if bricks.count == 0 {
-                        
-                    // level beaten
+                        // level beaten
                         
                         //move this to when you hit play next level
                         GameData.mainData().currentLevel++
-                        
-                        
+
                         
                         if let levelVC = storyboard?.instantiateViewControllerWithIdentifier("LevelVC") {
                             
                             navigationController?.viewControllers = [levelVC]
+                            
                         }
+                        
                         
                     }
                     
@@ -184,6 +185,10 @@ class LevelViewController: UIViewController, UICollisionBehaviorDelegate {
             
             // remove ball
             
+            println(balls)
+            
+            
+            
             if balls.count > 0 {
                 
                 collisionBehavior.removeItem(balls[0])
@@ -195,6 +200,19 @@ class LevelViewController: UIViewController, UICollisionBehaviorDelegate {
                     livesView.ballsLeft--
                     createBall()
                 
+                }
+                
+            }
+            
+            if livesView.ballsLeft == 0 {
+                
+                println(livesView.ballsLeft)
+                // level lost
+                
+                if let doneDC = storyboard?.instantiateViewControllerWithIdentifier("DoneDC") {
+                    
+                    navigationController?.viewControllers = [doneDC]
+                    
                 }
                 
             }

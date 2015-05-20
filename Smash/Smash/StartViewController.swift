@@ -15,7 +15,7 @@ class StartViewController: UIViewController {
         
         if let levelVC = storyboard?.instantiateViewControllerWithIdentifier("LevelVC") {
             
-        navigationController?.viewControllers = [levelVC]
+           navigationController?.viewControllers = [levelVC]
         
         }
         

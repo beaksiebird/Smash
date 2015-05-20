@@ -8,8 +8,22 @@
 
 import UIKit
 
-class DoneViewController: UIViewController {
 
+
+
+class DoneViewController: UIViewController {
+    
+    
+    @IBAction func restartGame(sender: AnyObject) {
+        
+        if let doneDC = storyboard?.instantiateViewControllerWithIdentifier("DoneDC") {
+            
+            navigationController?.viewControllers = [doneDC]
+            
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
