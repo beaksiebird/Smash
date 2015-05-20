@@ -7,46 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD7659AB1B0B6CFB009AA58C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7659AA1B0B6CFB009AA58C /* AppDelegate.swift */; };
-		CD7659AD1B0B6CFB009AA58C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7659AC1B0B6CFB009AA58C /* ViewController.swift */; };
-		CD7659B01B0B6CFB009AA58C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7659AE1B0B6CFB009AA58C /* Main.storyboard */; };
-		CD7659B21B0B6CFB009AA58C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7659B11B0B6CFB009AA58C /* Images.xcassets */; };
-		CD7659B51B0B6CFB009AA58C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD7659B31B0B6CFB009AA58C /* LaunchScreen.xib */; };
-		CD7659C11B0B6CFB009AA58C /* SmashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7659C01B0B6CFB009AA58C /* SmashTests.swift */; };
+		A9DAD6901B0B6CE80075E4FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DAD68F1B0B6CE80075E4FE /* AppDelegate.swift */; };
+		A9DAD6921B0B6CE80075E4FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DAD6911B0B6CE80075E4FE /* ViewController.swift */; };
+		A9DAD6951B0B6CE80075E4FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DAD6931B0B6CE80075E4FE /* Main.storyboard */; };
+		A9DAD6971B0B6CE80075E4FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DAD6961B0B6CE80075E4FE /* Images.xcassets */; };
+		A9DAD69A1B0B6CE80075E4FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9DAD6981B0B6CE80075E4FE /* LaunchScreen.xib */; };
+		A9DAD6A61B0B6CE80075E4FE /* SmashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DAD6A51B0B6CE80075E4FE /* SmashTests.swift */; };
+		A9DBFA911B0BBED500B88C2D /* BallCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFA901B0BBED500B88C2D /* BallCountView.swift */; };
+		A9DBFA931B0BBEE500B88C2D /* BallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFA921B0BBEE500B88C2D /* BallView.swift */; };
+		A9DBFA951B0BBEF500B88C2D /* BrickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFA941B0BBEF500B88C2D /* BrickView.swift */; };
+		A9DBFA971B0BBF0500B88C2D /* PaddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFA961B0BBF0500B88C2D /* PaddleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CD7659BB1B0B6CFB009AA58C /* PBXContainerItemProxy */ = {
+		A9DAD6A01B0B6CE80075E4FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CD76599D1B0B6CFB009AA58C /* Project object */;
+			containerPortal = A9DAD6821B0B6CE80075E4FE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CD7659A41B0B6CFB009AA58C;
+			remoteGlobalIDString = A9DAD6891B0B6CE80075E4FE;
 			remoteInfo = Smash;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CD7659A51B0B6CFB009AA58C /* Smash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smash.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD7659A91B0B6CFB009AA58C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD7659AA1B0B6CFB009AA58C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD7659AC1B0B6CFB009AA58C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CD7659AF1B0B6CFB009AA58C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CD7659B11B0B6CFB009AA58C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CD7659B41B0B6CFB009AA58C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		CD7659BA1B0B6CFB009AA58C /* SmashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD7659BF1B0B6CFB009AA58C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD7659C01B0B6CFB009AA58C /* SmashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmashTests.swift; sourceTree = "<group>"; };
+		A9DAD68A1B0B6CE80075E4FE /* Smash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DAD68E1B0B6CE80075E4FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DAD68F1B0B6CE80075E4FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9DAD6911B0B6CE80075E4FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9DAD6941B0B6CE80075E4FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9DAD6961B0B6CE80075E4FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A9DAD6991B0B6CE80075E4FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A9DAD69F1B0B6CE80075E4FE /* SmashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DAD6A41B0B6CE80075E4FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DAD6A51B0B6CE80075E4FE /* SmashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmashTests.swift; sourceTree = "<group>"; };
+		A9DBFA901B0BBED500B88C2D /* BallCountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallCountView.swift; sourceTree = "<group>"; };
+		A9DBFA921B0BBEE500B88C2D /* BallView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallView.swift; sourceTree = "<group>"; };
+		A9DBFA941B0BBEF500B88C2D /* BrickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrickView.swift; sourceTree = "<group>"; };
+		A9DBFA961B0BBF0500B88C2D /* PaddleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CD7659A21B0B6CFB009AA58C /* Frameworks */ = {
+		A9DAD6871B0B6CE80075E4FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD7659B71B0B6CFB009AA58C /* Frameworks */ = {
+		A9DAD69C1B0B6CE80075E4FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,58 +64,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CD76599C1B0B6CFB009AA58C = {
+		A9DAD6811B0B6CE80075E4FE = {
 			isa = PBXGroup;
 			children = (
-				CD7659A71B0B6CFB009AA58C /* Smash */,
-				CD7659BD1B0B6CFB009AA58C /* SmashTests */,
-				CD7659A61B0B6CFB009AA58C /* Products */,
+				A9DAD68C1B0B6CE80075E4FE /* Smash */,
+				A9DAD6A21B0B6CE80075E4FE /* SmashTests */,
+				A9DAD68B1B0B6CE80075E4FE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CD7659A61B0B6CFB009AA58C /* Products */ = {
+		A9DAD68B1B0B6CE80075E4FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD7659A51B0B6CFB009AA58C /* Smash.app */,
-				CD7659BA1B0B6CFB009AA58C /* SmashTests.xctest */,
+				A9DAD68A1B0B6CE80075E4FE /* Smash.app */,
+				A9DAD69F1B0B6CE80075E4FE /* SmashTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CD7659A71B0B6CFB009AA58C /* Smash */ = {
+		A9DAD68C1B0B6CE80075E4FE /* Smash */ = {
 			isa = PBXGroup;
 			children = (
-				CD7659AA1B0B6CFB009AA58C /* AppDelegate.swift */,
-				CD7659AC1B0B6CFB009AA58C /* ViewController.swift */,
-				CD7659AE1B0B6CFB009AA58C /* Main.storyboard */,
-				CD7659B11B0B6CFB009AA58C /* Images.xcassets */,
-				CD7659B31B0B6CFB009AA58C /* LaunchScreen.xib */,
-				CD7659A81B0B6CFB009AA58C /* Supporting Files */,
+				A9DAD6911B0B6CE80075E4FE /* ViewController.swift */,
+				A9DAD6931B0B6CE80075E4FE /* Main.storyboard */,
+				A9DBFA901B0BBED500B88C2D /* BallCountView.swift */,
+				A9DBFA921B0BBEE500B88C2D /* BallView.swift */,
+				A9DBFA941B0BBEF500B88C2D /* BrickView.swift */,
+				A9DBFA961B0BBF0500B88C2D /* PaddleView.swift */,
+				A9DAD68D1B0B6CE80075E4FE /* Supporting Files */,
 			);
 			path = Smash;
 			sourceTree = "<group>";
 		};
-		CD7659A81B0B6CFB009AA58C /* Supporting Files */ = {
+		A9DAD68D1B0B6CE80075E4FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CD7659A91B0B6CFB009AA58C /* Info.plist */,
+				A9DAD68F1B0B6CE80075E4FE /* AppDelegate.swift */,
+				A9DAD6961B0B6CE80075E4FE /* Images.xcassets */,
+				A9DAD6981B0B6CE80075E4FE /* LaunchScreen.xib */,
+				A9DAD68E1B0B6CE80075E4FE /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CD7659BD1B0B6CFB009AA58C /* SmashTests */ = {
+		A9DAD6A21B0B6CE80075E4FE /* SmashTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD7659C01B0B6CFB009AA58C /* SmashTests.swift */,
-				CD7659BE1B0B6CFB009AA58C /* Supporting Files */,
+				A9DAD6A51B0B6CE80075E4FE /* SmashTests.swift */,
+				A9DAD6A31B0B6CE80075E4FE /* Supporting Files */,
 			);
 			path = SmashTests;
 			sourceTree = "<group>";
 		};
-		CD7659BE1B0B6CFB009AA58C /* Supporting Files */ = {
+		A9DAD6A31B0B6CE80075E4FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CD7659BF1B0B6CFB009AA58C /* Info.plist */,
+				A9DAD6A41B0B6CE80075E4FE /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -115,13 +127,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CD7659A41B0B6CFB009AA58C /* Smash */ = {
+		A9DAD6891B0B6CE80075E4FE /* Smash */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD7659C41B0B6CFB009AA58C /* Build configuration list for PBXNativeTarget "Smash" */;
+			buildConfigurationList = A9DAD6A91B0B6CE80075E4FE /* Build configuration list for PBXNativeTarget "Smash" */;
 			buildPhases = (
-				CD7659A11B0B6CFB009AA58C /* Sources */,
-				CD7659A21B0B6CFB009AA58C /* Frameworks */,
-				CD7659A31B0B6CFB009AA58C /* Resources */,
+				A9DAD6861B0B6CE80075E4FE /* Sources */,
+				A9DAD6871B0B6CE80075E4FE /* Frameworks */,
+				A9DAD6881B0B6CE80075E4FE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -129,46 +141,46 @@
 			);
 			name = Smash;
 			productName = Smash;
-			productReference = CD7659A51B0B6CFB009AA58C /* Smash.app */;
+			productReference = A9DAD68A1B0B6CE80075E4FE /* Smash.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CD7659B91B0B6CFB009AA58C /* SmashTests */ = {
+		A9DAD69E1B0B6CE80075E4FE /* SmashTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD7659C71B0B6CFB009AA58C /* Build configuration list for PBXNativeTarget "SmashTests" */;
+			buildConfigurationList = A9DAD6AC1B0B6CE80075E4FE /* Build configuration list for PBXNativeTarget "SmashTests" */;
 			buildPhases = (
-				CD7659B61B0B6CFB009AA58C /* Sources */,
-				CD7659B71B0B6CFB009AA58C /* Frameworks */,
-				CD7659B81B0B6CFB009AA58C /* Resources */,
+				A9DAD69B1B0B6CE80075E4FE /* Sources */,
+				A9DAD69C1B0B6CE80075E4FE /* Frameworks */,
+				A9DAD69D1B0B6CE80075E4FE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CD7659BC1B0B6CFB009AA58C /* PBXTargetDependency */,
+				A9DAD6A11B0B6CE80075E4FE /* PBXTargetDependency */,
 			);
 			name = SmashTests;
 			productName = SmashTests;
-			productReference = CD7659BA1B0B6CFB009AA58C /* SmashTests.xctest */;
+			productReference = A9DAD69F1B0B6CE80075E4FE /* SmashTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CD76599D1B0B6CFB009AA58C /* Project object */ = {
+		A9DAD6821B0B6CE80075E4FE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
-				ORGANIZATIONNAME = "Whitney Lauren";
+				ORGANIZATIONNAME = "Jo Albright";
 				TargetAttributes = {
-					CD7659A41B0B6CFB009AA58C = {
+					A9DAD6891B0B6CE80075E4FE = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
-					CD7659B91B0B6CFB009AA58C = {
+					A9DAD69E1B0B6CE80075E4FE = {
 						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = CD7659A41B0B6CFB009AA58C;
+						TestTargetID = A9DAD6891B0B6CE80075E4FE;
 					};
 				};
 			};
-			buildConfigurationList = CD7659A01B0B6CFB009AA58C /* Build configuration list for PBXProject "Smash" */;
+			buildConfigurationList = A9DAD6851B0B6CE80075E4FE /* Build configuration list for PBXProject "Smash" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -176,29 +188,29 @@
 				en,
 				Base,
 			);
-			mainGroup = CD76599C1B0B6CFB009AA58C;
-			productRefGroup = CD7659A61B0B6CFB009AA58C /* Products */;
+			mainGroup = A9DAD6811B0B6CE80075E4FE;
+			productRefGroup = A9DAD68B1B0B6CE80075E4FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CD7659A41B0B6CFB009AA58C /* Smash */,
-				CD7659B91B0B6CFB009AA58C /* SmashTests */,
+				A9DAD6891B0B6CE80075E4FE /* Smash */,
+				A9DAD69E1B0B6CE80075E4FE /* SmashTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CD7659A31B0B6CFB009AA58C /* Resources */ = {
+		A9DAD6881B0B6CE80075E4FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD7659B01B0B6CFB009AA58C /* Main.storyboard in Resources */,
-				CD7659B51B0B6CFB009AA58C /* LaunchScreen.xib in Resources */,
-				CD7659B21B0B6CFB009AA58C /* Images.xcassets in Resources */,
+				A9DAD6951B0B6CE80075E4FE /* Main.storyboard in Resources */,
+				A9DAD69A1B0B6CE80075E4FE /* LaunchScreen.xib in Resources */,
+				A9DAD6971B0B6CE80075E4FE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD7659B81B0B6CFB009AA58C /* Resources */ = {
+		A9DAD69D1B0B6CE80075E4FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -208,46 +220,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CD7659A11B0B6CFB009AA58C /* Sources */ = {
+		A9DAD6861B0B6CE80075E4FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD7659AD1B0B6CFB009AA58C /* ViewController.swift in Sources */,
-				CD7659AB1B0B6CFB009AA58C /* AppDelegate.swift in Sources */,
+				A9DAD6921B0B6CE80075E4FE /* ViewController.swift in Sources */,
+				A9DBFA911B0BBED500B88C2D /* BallCountView.swift in Sources */,
+				A9DBFA951B0BBEF500B88C2D /* BrickView.swift in Sources */,
+				A9DAD6901B0B6CE80075E4FE /* AppDelegate.swift in Sources */,
+				A9DBFA971B0BBF0500B88C2D /* PaddleView.swift in Sources */,
+				A9DBFA931B0BBEE500B88C2D /* BallView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD7659B61B0B6CFB009AA58C /* Sources */ = {
+		A9DAD69B1B0B6CE80075E4FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD7659C11B0B6CFB009AA58C /* SmashTests.swift in Sources */,
+				A9DAD6A61B0B6CE80075E4FE /* SmashTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CD7659BC1B0B6CFB009AA58C /* PBXTargetDependency */ = {
+		A9DAD6A11B0B6CE80075E4FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CD7659A41B0B6CFB009AA58C /* Smash */;
-			targetProxy = CD7659BB1B0B6CFB009AA58C /* PBXContainerItemProxy */;
+			target = A9DAD6891B0B6CE80075E4FE /* Smash */;
+			targetProxy = A9DAD6A01B0B6CE80075E4FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CD7659AE1B0B6CFB009AA58C /* Main.storyboard */ = {
+		A9DAD6931B0B6CE80075E4FE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CD7659AF1B0B6CFB009AA58C /* Base */,
+				A9DAD6941B0B6CE80075E4FE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CD7659B31B0B6CFB009AA58C /* LaunchScreen.xib */ = {
+		A9DAD6981B0B6CE80075E4FE /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CD7659B41B0B6CFB009AA58C /* Base */,
+				A9DAD6991B0B6CE80075E4FE /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -255,7 +271,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CD7659C21B0B6CFB009AA58C /* Debug */ = {
+		A9DAD6A71B0B6CE80075E4FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -299,7 +315,7 @@
 			};
 			name = Debug;
 		};
-		CD7659C31B0B6CFB009AA58C /* Release */ = {
+		A9DAD6A81B0B6CE80075E4FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -336,7 +352,7 @@
 			};
 			name = Release;
 		};
-		CD7659C51B0B6CFB009AA58C /* Debug */ = {
+		A9DAD6AA1B0B6CE80075E4FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -346,7 +362,7 @@
 			};
 			name = Debug;
 		};
-		CD7659C61B0B6CFB009AA58C /* Release */ = {
+		A9DAD6AB1B0B6CE80075E4FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -356,7 +372,7 @@
 			};
 			name = Release;
 		};
-		CD7659C81B0B6CFB009AA58C /* Debug */ = {
+		A9DAD6AD1B0B6CE80075E4FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -375,7 +391,7 @@
 			};
 			name = Debug;
 		};
-		CD7659C91B0B6CFB009AA58C /* Release */ = {
+		A9DAD6AE1B0B6CE80075E4FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -393,32 +409,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CD7659A01B0B6CFB009AA58C /* Build configuration list for PBXProject "Smash" */ = {
+		A9DAD6851B0B6CE80075E4FE /* Build configuration list for PBXProject "Smash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CD7659C21B0B6CFB009AA58C /* Debug */,
-				CD7659C31B0B6CFB009AA58C /* Release */,
+				A9DAD6A71B0B6CE80075E4FE /* Debug */,
+				A9DAD6A81B0B6CE80075E4FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD7659C41B0B6CFB009AA58C /* Build configuration list for PBXNativeTarget "Smash" */ = {
+		A9DAD6A91B0B6CE80075E4FE /* Build configuration list for PBXNativeTarget "Smash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CD7659C51B0B6CFB009AA58C /* Debug */,
-				CD7659C61B0B6CFB009AA58C /* Release */,
+				A9DAD6AA1B0B6CE80075E4FE /* Debug */,
+				A9DAD6AB1B0B6CE80075E4FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		CD7659C71B0B6CFB009AA58C /* Build configuration list for PBXNativeTarget "SmashTests" */ = {
+		A9DAD6AC1B0B6CE80075E4FE /* Build configuration list for PBXNativeTarget "SmashTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CD7659C81B0B6CFB009AA58C /* Debug */,
-				CD7659C91B0B6CFB009AA58C /* Release */,
+				A9DAD6AD1B0B6CE80075E4FE /* Debug */,
+				A9DAD6AE1B0B6CE80075E4FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CD76599D1B0B6CFB009AA58C /* Project object */;
+	rootObject = A9DAD6821B0B6CE80075E4FE /* Project object */;
 }
